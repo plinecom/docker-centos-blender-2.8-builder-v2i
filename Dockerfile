@@ -26,7 +26,7 @@ RUN yum -y install centos-release-scl epel-release \
     tbb-devel \
     tinyxml-devel yaml-cpp-devel \
     libsndfile-devel \
-    x264-devel ffmpeg-devel \
+    x264-devel ffmpeg ffmpeg-devel \
     bzip2-devel libquadmath-devel \
  && yum clean all
 
