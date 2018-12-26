@@ -9,6 +9,7 @@ RUN yum update -y && yum clean all
 
 # Install packages
 RUN yum -y install centos-release-scl epel-release \
+ && yum -y install http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm \
  && yum -y install autoconf automake bison cmake3 flex gcc git \
     jack-audio-connection-kit-devel make patch pcre-devel python36 \
     python-setuptools subversion tcl yasm devtoolset-7-gcc-c++ libtool \
@@ -16,6 +17,16 @@ RUN yum -y install centos-release-scl epel-release \
     libXrandr-devel libXt-devel mesa-libGLU-devel zlib-devel \
     python-devel ilmbase-devel llvm-static \
     wget gcc-c++ sudo \
+    install SDL-devel bzip2 cmake \
+    fftw-devel freetype-devel glew-devel jemalloc-devel \
+    libjpeg-turbo-devel libogg-devel libpng-devel libtheora-devel \
+    libtiff-devel libvorbis-devel libxml2-devel \
+    openal-soft-devel openjpeg2-devel \
+    readline-devel sqlite-devel \
+    tbb-devel \
+    tinyxml-devel yaml-cpp-devel \
+    libsndfile-devel \
+    x264-devel ffmpeg-devel \
  && yum clean all
 
 # Use cmake3
