@@ -1,14 +1,14 @@
-# [plinecom/docker-centos-blender-2.8-builder-v2](https://hub.docker.com/r/plinecom/docker-centos-blender-2.8-builder-v2/)
+# [plinecom/docker-centos-blender-2.8-builder-v2i](https://hub.docker.com/r/plinecom/docker-centos-blender-2.8-builder-v2i/)
 
 ## Usage
 
 ### Automatic build
 
-    docker run plinecom/docker-centos-blender-2.8-builder-v2
+    docker run plinecom/docker-centos-blender-2.8-builder-v2i
 
 ### Automatic build (advanced)
 
-    docker create --name blender-builder plinecom/docker-centos-blender-2.8-builder-v2
+    docker create --name blender-builder plinecom/docker-centos-blender-2.8-builder-v2i
 
 Repeat:
 
@@ -17,7 +17,7 @@ Repeat:
 
 ### Manual build
 
-    docker run -it plinecom/docker-centos-blender-2.8-builder-v2 bash
+    docker run -it plinecom/docker-centos-blender-2.8-builder-v2i bash
 
 Use devtoolset-7.
 
@@ -27,4 +27,4 @@ Run /usr/bin/start or go to $HOME/blender-git/.
 
 ## Source
 
-[github.com/plinecom/docker-centos-blender-2.8-builder-v2](https://github.com/plinecom/docker-centos-blender-2.8-builder-v2)
+[github.com/plinecom/docker-centos-blender-2.8-builder-v2i](https://github.com/plinecom/docker-centos-blender-2.8-builder-v2i)
