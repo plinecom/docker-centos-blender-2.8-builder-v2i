@@ -27,6 +27,7 @@ RUN yum -y install centos-release-scl epel-release \
     tinyxml-devel yaml-cpp-devel \
     libsndfile-devel \
     x264-devel ffmpeg-devel \
+    bzip2-devel libquadmath-devel \
  && yum clean all
 
 # Use cmake3
