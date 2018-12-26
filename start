@@ -1,0 +1,24 @@
+#!/bin/bash
+
+yum -y update
+
+cd $HOME/blender-git/blender
+make update
+
+./build_files/build_environment/install_deps.sh --no-confirm --build-boost --force-oiio
+cp -R /opt/lib/oiio-*/lib64/* /usr/lib64/
+cp -R /opt/lib/osl-*/lib64/* /usr/lib64
+make full
+
+cd /
+rm -f blender-*.tar.gz
+cpack -G TGZ --config $HOME/blender-git/build_linux_full/CPackConfig.cmake
+
+tar czf optlib.tar.gz /opt/lib
+
+if [ -f blender-*.tar.gz ]; then
+	filename=$(ls blender-*.tar.gz)
+	echo "Use docker cp to copy the package:"
+	echo "  docker cp $HOSTNAME:/$filename ./"
+	echo "  docker cp $HOSTNAME:/optlib.tar.gz ./"
+fi
