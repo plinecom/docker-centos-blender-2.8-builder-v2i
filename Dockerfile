@@ -17,7 +17,7 @@ RUN yum -y install centos-release-scl epel-release \
     libXrandr-devel libXt-devel mesa-libGLU-devel zlib-devel \
     python-devel ilmbase-devel llvm-static \
     wget gcc-c++ sudo \
-    install SDL-devel bzip2 cmake \
+    SDL-devel bzip2 cmake \
     fftw-devel freetype-devel glew-devel jemalloc-devel \
     libjpeg-turbo-devel libogg-devel libpng-devel libtheora-devel \
     libtiff-devel libvorbis-devel libxml2-devel \
