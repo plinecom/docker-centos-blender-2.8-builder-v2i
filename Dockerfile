@@ -8,10 +8,10 @@ WORKDIR $HOME
 RUN yum update -y && yum clean all
 
 # Install packages
-RUN yum -y install centos-release-scl epel-release \
+RUN yum -y install centos-release-scl epel-release https://centos7.iuscommunity.org/ius-release.rpm \
  && yum -y install http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm \
  && yum -y install autoconf automake bison cmake3 flex gcc git \
-    jack-audio-connection-kit-devel make patch pcre-devel python36 \
+    jack-audio-connection-kit-devel make patch pcre-devel python36u \
     python-setuptools subversion tcl yasm devtoolset-7-gcc-c++ libtool \
     libX11-devel libXcursor-devel libXi-devel libXinerama-devel \
     libXrandr-devel libXt-devel mesa-libGLU-devel zlib-devel \
